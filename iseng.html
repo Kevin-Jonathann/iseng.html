@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Hai </h1>
+    <img src="https://www.kepogaul.com/wp-content/uploads/2020/04/001022-00_kata-kata-buat-nembak-calon-pacar_kata-pernyataan-cinta_800x450_cc0-min-800x450.jpg" alt="i love you">
+    <h1>Mau gk jd pacarku??</h1>
+    <button id='btn_mau' onclick='alert("I <3 U")'>Mau </button>
+    <button id='gamau' onclick="gamau(this)" style='position: absolute'>Gamau</button>
+  </body>
+  <script>
+    function gamau(id){
+      var mau = document.getElementById('btn_mau');
+      var i = Math.floor(Math.random()*300)+1;
+      var j = Math.floor(Math.random()*100)+mau.offsetTop;
+      id.style.left = i+'px';
+      id.style.top =j+'px';
+    }
+  </script>
+</html>
